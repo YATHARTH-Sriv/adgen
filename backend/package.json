@@ -1,0 +1,36 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon --exec ts-node server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "test": "node test-server.js",
+    "remotion:preview": "remotion preview remotion/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Video generation backend with Remotion",
+  "dependencies": {
+    "@remotion/bundler": "^4.0.314",
+    "@remotion/cli": "^4.0.314",
+    "@remotion/renderer": "^4.0.314",
+    "axios": "^1.6.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "multer": "^1.4.5-lts.1",
+    "remotion": "^4.0.314"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^4.17.17",
+    "@types/multer": "^1.4.7",
+    "@types/node": "^20.0.0",
+    "@types/react": "^19.1.8",
+    "nodemon": "^3.1.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
